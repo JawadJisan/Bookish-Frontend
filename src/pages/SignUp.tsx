@@ -17,7 +17,7 @@ export default function SignUp() {
   console.log(error);
 
   useEffect(() => {
-    if (error !== null) toast.error(error);
+    if (error !== null) toast.error(error!);
     onAuthStateChanged(auth, (user) => {
       dispatch(setUser(user?.email));
     });
