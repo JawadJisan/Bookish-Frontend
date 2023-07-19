@@ -8,8 +8,8 @@ import SignIn from "../pages/SignIn";
 import BookList from "../components/ui/BookList";
 import BookDetails from "../pages/BookDetails";
 import PrivateRoute from "./PrivateRoute";
+// import NotFound from "../pages/";
 import ReadlingList from "../pages/ReadlingList";
-import NotFound from "../pages/NotFound";
 
 const routes = createBrowserRouter([
   {
@@ -58,10 +58,10 @@ const routes = createBrowserRouter([
     path: "/sign-in",
     element: <SignIn />,
   },
-  {
-    path: "*",
-    element: <NotFound />,
-  },
+  // {
+  //   path: "*",
+  //   element: <NotFound />,
+  // },
 ]);
 
 export default routes;
